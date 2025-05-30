@@ -3,7 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   
   devServer: {
-    port: 3004 // Puerto que deseas utilizar
+    proxy: "https://si-back-t881.onrender.com"
   },
 
   pluginOptions: {
