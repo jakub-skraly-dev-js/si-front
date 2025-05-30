@@ -319,7 +319,7 @@ export default {
         const pdfBase64Array = pdfFiles.map(file => file.fileToUpload.replace('data:application/pdf;base64,', ''));
         
         try {
-          const response = await axios.post('http://localhost:5000/evaluar', { pdf_base64: pdfBase64Array });
+          const response = await axios.post('https://si-ai.onrender.com/evaluar', { pdf_base64: pdfBase64Array });
           console.log(response.data)
           this.handleResponse(response.data);
           this.dialogPro=false;
