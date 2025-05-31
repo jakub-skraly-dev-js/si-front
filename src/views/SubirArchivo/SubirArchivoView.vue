@@ -244,7 +244,7 @@
           if (pdfBase64) {
               pdfBase64 = pdfBase64.replace('data:application/pdf;base64,', '');
               try {
-                  const response = await axios.post('https://8bsjqbdn-10000.brs.devtunnels.ms/evaluar', { pdf_base64: [pdfBase64] });
+                  const response = await axios.post('https://si-ai-backend-production.up.railway.app/evaluar', { pdf_base64: [pdfBase64] });
                   console.log("Archivo enviado exitosamente:");
                   this.handleResponse(response.data);
               } catch (error) {
