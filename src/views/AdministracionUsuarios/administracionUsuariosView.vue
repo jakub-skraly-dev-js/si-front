@@ -660,7 +660,7 @@
                         this.dialogError=true;
                     }else{
                         const profesorE = this.profesores.find(p => p.p_codigoD === this.profesor.codigoD);
-                        if(!profesorE){
+                        if(profesorE){
                             this.mensaje='No se puede registrar, ya existe un profesor con ese codigo';
                             this.typemsg='error';
                             this.dialogError=true;
